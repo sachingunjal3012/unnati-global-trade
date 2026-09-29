@@ -1,10 +1,29 @@
 import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Unnati Global Trade | Products, Technology & Expertise from India",
-  description: "Connecting India's products, technology and expertise with global markets."
+export const metadata: Metadata = {
+  metadataBase: new URL("https://www.unnatiglobaltrade.com"),
+  title: {
+    default: "Unnati Global Trade | Indian Product Exports & IT Services",
+    template: "%s | Unnati Global Trade"
+  },
+  description: "Unnati Global Trade connects international buyers with selected Indian product exports and provides software engineering and IT services from India.",
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    url: "/",
+    siteName: "Unnati Global Trade",
+    title: "Unnati Global Trade | Indian Product Exports & IT Services",
+    description: "Indian product exports and software engineering services for global businesses.",
+    locale: "en_IN"
+  },
+  twitter: {
+    card: "summary",
+    title: "Unnati Global Trade | Indian Product Exports & IT Services",
+    description: "Indian product exports and software engineering services for global businesses."
+  }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

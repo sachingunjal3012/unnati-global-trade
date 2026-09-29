@@ -1,1 +1,9 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Markets",
+	description: "Discover the international markets served by Unnati Global Trade's Indian product export and IT services businesses.",
+	alternates: { canonical: "/markets" }
+};
+
 export default function Markets(){return <main className="section"><div className="container"><div className="eyebrow">Markets</div><h1 style={{fontSize:54}}>Global Markets</h1><div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:22,marginTop:30}}><div className="card"><h2>Product Markets</h2><p>Potential markets include UAE, Middle East, Europe, Netherlands and other international markets.</p><p style={{color:"var(--muted)"}}>These are potential markets and do not imply current exports to every listed country.</p></div><div className="card"><h2>IT Services Markets</h2><p>International businesses in North America, Europe, Middle East, Asia-Pacific and other global markets.</p><p style={{color:"var(--muted)"}}>Serving international businesses based on project requirements.</p></div></div></div></main>}
